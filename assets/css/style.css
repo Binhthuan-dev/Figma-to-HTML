@@ -40,6 +40,21 @@ a {
   margin-right: auto;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.bread-all {
+  word-break: break-all;
+}
+
 /* =======================header========================= */
 
 .header {
@@ -341,6 +356,7 @@ a {
 }
 
 .popular .course-item {
+  flex: 1;
   width: 370px;
   height: 466px;
   border-radius: 12px;
@@ -420,4 +436,76 @@ a {
 
 .popular .course-item .btn-book:hover {
   background-color: #ffb900;
+}
+
+/* ==================feed back================ */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #2e2100;
+}
+
+.feedback-item {
+  display: flex;
+}
+
+.feedback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-item .info {
+  width: 159px;
+  height: 188px;
+}
+
+.feedback-item .info .member-name {
+  color: #f7f7f7;
+  margin-top: 18px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 2.4rem;
+  line-height: 1.42;
+}
+
+.feedback-item .info .desc {
+  color: #bfbcb2;
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  letter-spacing: 0%;
+}
+
+.feedback-item .dots {
+  gap: 6px;
+  display: flex;
+  margin-top: 28px;
+}
+
+.feedback-item .dots .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #634700;
+  cursor: pointer;
+}
+.feedback-item .dots .dot.active {
+  background-color: #ffb900;
+  cursor: default;
+}
+
+.feedback-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback-item .content blockquote {
+  color: #ffffff;
+  font-style: Italic;
+  font-size: 2.6rem;
+  line-height: 1.54;
 }
