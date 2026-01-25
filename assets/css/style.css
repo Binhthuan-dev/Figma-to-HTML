@@ -508,3 +508,54 @@ a {
   font-size: 2.6rem;
   line-height: 1.54;
 }
+
+/* =======================features============= */
+
+.features {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .image {
+  display: flex;
+  gap: 30px;
+}
+.features .image img {
+  width: 270px;
+  height: 404px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.features .lower {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features .content .desc {
+  color: #5f5b53;
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  letter-spacing: 0%;
+}
+
+.features .content .cta-btn {
+  margin-top: 32px;
+  width: 137px;
+  height: 50px;
+  border-radius: 26px;
+  background-color: var(--primary-color);
+}
